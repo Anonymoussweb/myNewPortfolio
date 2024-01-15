@@ -1,0 +1,1147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+}
+
+/* google font cdn------ */
+@import url("https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Poppins&display=swap");
+
+/* google font cdn End------ */
+html{
+    scroll-behavior: smooth;
+    cursor: none;
+}
+.wlogo{
+    width: 100px;
+    height: 50px;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: .2s linear;
+}
+.wlogo:hover{
+    transform: translateY(-10px);
+}
+.dot{
+width: 50px;
+height: 50px;
+background-color: white;
+clip-path: polygon(44% 50%, 51% 80%, 73% 63%);
+}
+.outline{
+    width: 55px;
+    height: 55px;
+    background-color: white;
+    transition: .5s ease;
+    
+    }
+    .dot,.outline{
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1111;
+        position: fixed;
+        top: 0;
+        left: 0;
+        pointer-events: none;
+        mix-blend-mode: difference;
+    }
+
+a {
+    text-decoration: none;
+}
+.container{
+    position: relative;
+}
+.up{
+    position: absolute;
+    top: -100px;
+}
+.sticky i{
+    color: #0060FF;
+    font-size: 40px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    transition: .5s linear ;
+}
+.container .nav .bx-menu {
+    display: none;
+}
+
+h1 {
+    color: white;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+#active {
+    color: #fff;
+}
+
+.email {
+    color: #ffffff88;
+}
+
+.worktxt {
+    font-size: 60px;
+}
+
+.light {
+    color: #ffffff88;
+}
+
+.adv {
+    margin-top: 200px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.container {
+    background-color: #111216;
+    padding: 0 100px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.container .nav {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    line-height: 80px;
+    background-color: #111216;
+    z-index: 11;
+    
+}
+
+.container .nav ul li a {
+    text-decoration: none;
+    color: #ffffff88;
+    font-weight: 900;
+    padding: 0 10px;
+}
+
+.container .nav ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+/* -------------------------------------Hero Section----------------------------------------- */
+
+
+#hero .hero-container {
+    display: flex;
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0;
+    padding-left: 20px;
+}
+
+.social h5 {
+    letter-spacing: 3px;
+}
+
+.social span {
+    padding: 0 10px;
+    font-size: larger;
+}
+
+#hero .hero-container .left {
+    width: 40%;
+
+}
+
+#hero .hero-container .right {
+    width: 60%;
+
+}
+
+#hero .hero-container .right img {
+    width: 100%;
+    padding: 0 0 20px 20px;
+}
+
+#hero .hero-container .left .left-1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    position: relative;
+}
+
+#hero .hero-container .left .left-1 p {
+    margin-left: 10px;
+}
+
+#hero .hero-container .left .left-1 h2 {
+    font-size: 200px;
+    z-index: 2;
+    line-height: 160px;
+    margin-top: 10px;
+}
+
+/* ---------------------------------Timeline Period/After Hero---------------------------------------- */
+.after-hero {
+    margin-top: -20px;
+
+}
+
+.after-hero>h1 {
+    margin-bottom: 50px;
+}
+
+.after-hero .exp {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+    padding: 50px 0;
+}
+
+/* -----------------------------------------Advantages----------------------------------------- */
+.container .advantages {
+    border-bottom: 2px solid grey;
+    padding-bottom: 150px;
+}
+
+.container .advantages img {
+    width: 120px;
+    height: 120px;
+    filter: grayscale(100%);
+}
+
+.container .advantages img:hover {
+    filter: grayscale(0);
+    cursor: pointer;
+}
+
+.container .advantages .skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.container .advantages .skills .skillres {
+    display: flex;
+    gap: 30px;
+}
+
+.container .advantages .skills .sk {
+    text-align: center;
+}
+
+.container .advantages .skills .sk .sk-1 {
+    border: 2px solid grey;
+    padding: 10px 5px;
+   
+}
+
+.center {
+    text-align: center;
+}
+
+.head {
+    margin-top: 30px;
+}
+
+/* ---------------------------After Advantages----------------------------- */
+
+.container .about {
+    margin-top: 100px;
+}
+
+.large {
+    font-size: 200px;
+    margin: 0 10px;
+}
+
+.container .about .about-1 {
+    display: flex;
+    align-items: center;
+}
+
+.container .about .about-1 img {
+    width: 250px;
+    height: 350px;
+    margin: 0 10px;
+}
+
+.container .about .about-2 {
+    display: flex;
+    padding: 50px 0;
+    justify-content: space-between;
+}
+
+/* ---------------------Gallery------------------------------ */
+
+
+.container .gallery {
+    display: flex;
+    gap: 20px;
+    text-align: center;
+    width: 100%;
+    margin-top: 150px;
+}
+
+.container .gallery p {
+    font-size: 10px;
+    color: rgb(202, 200, 200);
+}
+
+.margin {
+    margin: 10px 0 20px 0;
+}
+
+.small {
+    margin-top: 10px;
+}
+
+/* -----------------------Gallery Left---------------------------------- */
+.container .gallery .gallery-left {
+    width: 50%;
+}
+
+.container .gallery .gallery-left .gallery-left-2 {
+    display: flex;
+    gap: 10px;
+}
+
+.container .gallery .gallery-left .gallery-left-1 img {
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.container .gallery .gallery-left .gallery-left-2 img {
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+/* ------------------Gallery Right---------------------------- */
+.container .gallery .gallery-right {
+    width: 50%;
+}
+
+.container .gallery .gallery-right .gallery-right-1 {
+    display: flex;
+    gap: 10px;
+}
+
+.container .gallery .gallery-right .gallery-right-1 img {
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.container .gallery .gallery-right .gallery-right-2 img {
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+/* -------------------Galery Button------------------ */
+.pbutton {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+
+.pbutton a{
+    border: 1px solid grey;
+    padding: 16px 60px;
+}
+
+/* -----------------------------------Proud Stories------------------------------------ */
+
+.container .proud-stories {
+    margin-top: 5%;
+    display: flex;
+    width: 100%;
+    padding-bottom: 100px;
+}
+
+.container .proud-stories .left {
+    width: 50%;
+    margin-top: 120px;
+}
+
+.container .proud-stories .rightt {
+    width: 50%;
+    overflow: hidden;
+}
+
+.container .proud-stories .testimonials {
+    margin-left: 60px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.container .proud-stories .testimonials::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -70px;
+    width: 60px;
+    height: 2px;
+    background-image: linear-gradient(to right, black, grey);
+}
+
+/* --------------Testimoials------------------- */
+.wrapper {
+    height: 450px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-flow: row nowrap;
+    -webkit-box-align: end;
+    align-items: flex-end;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
+.mainSlider {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 500%;
+    height: auto;
+    transition: left 0.4s;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.content {
+    height: 100%;
+    text-align: center;
+    display: flex;
+    -webkit-box-flex: 1;
+    flex: 1;
+    flex-flow: column nowrap;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
+.content h2 {
+    font-size: 18px;
+    color: #fff;
+    font-family: montserrat;
+}
+
+.content p {
+    font-size: 30px;
+    font-family: cookie;
+    color: #fff;
+    margin-top: -20px;
+    margin-bottom: 20px;
+    max-width: 750px;
+}
+
+.img-area img {
+    width: 100%;
+}
+
+.img-area {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+    margin-bottom: 40px;
+    border: 5px solid #fff;
+}
+
+.dots {
+    width: 12px;
+    height: 12px;
+    margin: 15px 10px;
+    z-index: 10;
+    outline: 10px solid white;
+    outline-offset: -6px;
+    cursor: pointer;
+    appearance: none;
+    backface-visibility: hidden;
+    border-radius: 50%;
+}
+
+.dots:checked:nth-of-type(1)~.mainSlider {
+    left: 0%;
+}
+
+.dots:checked:nth-of-type(2)~.mainSlider {
+    left: -100%;
+}
+
+.dots:checked:nth-of-type(3)~.mainSlider {
+    left: -200%;
+}
+
+.dots:checked:nth-of-type(4)~.mainSlider {
+    left: -300%;
+}
+
+.dots:checked:nth-of-type(5)~.mainSlider {
+    left: -400%;
+}
+
+
+/* ------------------Testimonials END------------------------ */
+
+
+/* ------------------ACHIEVEMENT------------------------ */
+.container .achievement {
+    padding-bottom: 100px;
+}
+
+.container .achievement h1 {
+    text-align: center;
+}
+
+.container .achievement .achieve {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 0;
+}
+
+.container .achievement .achieve-mar {
+    padding: 0 100px;
+    margin-top: 50px;
+}
+
+.vline {
+    position: relative;
+}
+
+.vline::before {
+    content: '';
+    top: 0;
+    right: -60%;
+    position: absolute;
+    width: 3px;
+    height: 60px;
+    background-image: linear-gradient(to bottom, black, grey);
+}
+
+.ach-m {
+    margin-top: 10px;
+}
+
+/* -----------------------Contact------------------------------------ */
+.container .contact {
+    display: flex;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.container .contact .contact-left {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 12%;
+    position: relative;
+}
+
+.container .contact .contact-right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .contact .contact-right input {
+    background-color: transparent;
+    border-bottom: 1px solid grey;
+    border-right: none;
+    border-top: none;
+    border-left: none;
+    margin: 20px 0;
+    height: 50px;
+    padding: 0 20px;
+}
+
+.container .contact .contact-right input:focus {
+    outline: none;
+}
+
+.subbtn {
+    width: 200px;
+    height: 50px;
+    margin-top: 10px;
+    background-color: #0060FF;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* ---------------------------Follow US----------------------------------- */
+.container .follow {
+    padding: 100px 0;
+}
+
+.container .follow .follow-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20%;
+    font-size: 20px;
+}
+
+.ff {
+    position: relative;
+}
+
+.ff::after {
+    content: '';
+    position: absolute;
+    top: 40%;
+    left: 150px;
+    width: 350px;
+    height: 2px;
+    background-image: linear-gradient(to right, rgb(17, 2, 2), rgb(255, 255, 255));
+}
+
+/* ------------------------Footer----------------------------- */
+.container .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid grey;
+    border-top: 1px solid grey;
+    padding: 20px 0;
+}
+
+.container .footer ul li a {
+    font-size: 12px;
+}
+
+.container .footer h1 {
+    margin: 0 10% 0 0;
+    font-size: larger;
+}
+
+.container .footer p {
+    font-size: 12px;
+}
+
+.container .footer ul li {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+/* --------------------------------------------Media Queries------------------------------------------------ */
+
+
+
+/* -----------------------------------max-width:1024px Start----------------------------------------- */
+@media (max-width:1024px) {
+
+    /* --------------------Navbar-------------------- */
+    .container .nav {
+        font-size: small;
+    }
+
+    .container .nav h1 {
+        font-size: 20px;
+    }
+
+    /* --------------------Navbar ended-------------------- */
+    .vline::before {
+        right: -20%;
+    }
+
+    .ff::after {
+        content: '';
+        position: absolute;
+        top: 40%;
+        left: 150px;
+        width: 200px;
+        height: 2px;
+        background-image: linear-gradient(to right, rgb(17, 2, 2), rgb(255, 255, 255));
+    }
+}
+
+/* -----------------------------------max-width:1024px Ended----------------------------------------- */
+@media (max-width:960px) {
+
+    /* --------------------Navbar-------------------- */
+    .container {
+        padding: 0 20px;
+    }
+
+    /* --------------------Navbar ended-------------------- */
+
+    .container .about .about-1 img {
+        width: 180px;
+        /* --------------------About img-------------------- */
+        height: 250px;
+    }
+
+    .container .about .about-1 h2 {
+        font-size: 60px;
+    }
+
+    .container .about .about-2 h1 {
+        font-size: 20px;
+        /* --------------------About h1-------------------- */
+    }
+
+    /* --------------------After Hero-------------------- */
+    .after-hero .exp h2 {
+        font-size: 15px;
+    }
+
+    .after-hero .exp h1 {
+        font-size: 25px;
+    }
+
+    /* --------------------After Hero Ended-------------------- */
+    /* --------------------Advantages-------------------- */
+
+    .container .advantages .skills {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    /* --------------------Advantages Ended-------------------- */
+
+
+    /* --------------------Contact-------------------- */
+
+    .container .contact .contact-left .worktxt {
+        font-size: 40px;
+        margin-top: 100px;
+    }
+
+    /* --------------------Contact End-------------------- */
+    .ff::after {
+        width: 0;
+        height: 0;
+    }
+
+    .container .achievement .achieve-mar .worktxt {
+        font-size: larger;
+    }
+
+}
+
+@media (max-width:768px) {
+
+    /* --------------------Navbar-------------------- */
+    .container .nav .bx-menu {
+        display: block;
+        position: absolute;
+        top: 25px;
+        right: 30px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    .container .nav {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .container .nav .togggle {
+        background-color: #111216;
+        display: none;
+        transition: .5s ease;
+        font-size: larger;
+    }
+
+    .container .nav .togggle:hover {
+        background-color: gray;
+    }
+
+    .container .nav h1 {
+        text-align: left;
+
+    }
+
+    .container .nav ul li {
+        display: block;
+    }
+
+    /* --------------------Navbar ended-------------------- */
+    /* ---------------------------------Hero Container--------------------------------------- */
+    #hero .hero-container {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    #hero .hero-container .left {
+        margin-left: 10%;
+        width: 100%;
+    }
+
+    #hero .hero-container .left .left-1 .social {
+        position: absolute;
+        bottom: -100px;
+        left: 10px;
+        width: 70%;
+        padding-left: 0;
+        text-align: right;
+    }
+
+    #hero .hero-container .right {
+        margin-top: 100px;
+        width: 100%;
+        text-align: center;
+    }
+
+    #hero .hero-container .right img {
+        width: 80%;
+
+    }
+
+    /* ---------------------------------Hero Container Ended--------------------------------------- */
+    /* --------------------Advantages-------------------- */
+    .container .advantages .skills .sk .sk-1 {
+        width: 130px;
+        height: 150px;
+    }
+    .container .advantages .skills .sk h1,h2{
+        font-size: large;
+    }
+
+    .container .advantages img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .container .proud-stories {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* --------------------Testimonials div centered-------------------- */
+    .container .proud-stories .rightt {
+        width: 100%;
+    }
+
+    /* --------------------Testimonials ended-------------------- */
+    /* --------------------Achievements-------------------- */
+
+    .container .achievement .achieve h2 {
+        font-size: small;
+    }
+
+    .container .achievement .achieve p {
+        font-size: small;
+    }
+
+    .vline::before {
+
+        width: 0;
+        height: 0;
+    }
+
+    .container .achievement>h1 {
+        font-size: 50px;
+    }
+
+    .container .achievement .achieve-mar .worktxt {
+        margin: 0 10px;
+        font-size: larger;
+    }
+
+    /* --------------------Achievements-------------------- */
+    /* --------------------Footer-------------------- */
+    .container .footer ul li a {
+        font-size: 10px;
+    }
+
+    .container .footer p {
+        font-size: 10px;
+    }
+
+    .container .footer h1 {
+        font-size: small;
+    }
+
+
+}
+
+
+@media (max-width:640px) {
+
+    #hero .hero-container .left .left-1 h2 {
+        font-size: 160px;
+    }
+
+    .worktxt {
+        font-size: 40px;
+        /*  Advantages font size */
+    }
+
+    .container .after-hero {
+        margin-top: 50px;
+        /* After Hero margin top control */
+    }
+
+    .container .advantages {
+        margin-top: -50px;
+        /* Advantages margin top control */
+    }
+
+    /* --------------------After Hero-------------------- */
+    .after-hero .exp h2 {
+        font-size: 10px;
+    }
+
+    .after-hero .exp h1 {
+        font-size: 15px;
+    }
+
+    /* --------------------After Hero Ended-------------------- */
+
+
+    /* --------------------About-------------------- */
+    .container .about .about-1 {
+        display: block;
+        text-align: center;
+    }
+
+    .container .about .about-1 h2,
+    h3 {
+        display: inline-block;
+        text-align: left;
+    }
+
+    .container .about .about-2 h1 {
+        font-size: large;
+    }
+
+    .container .about .about-2 p {
+        font-size: small;
+    }
+
+    /* --------------------About END-------------------- */
+
+
+    /* --------------------Advantages div margin top-------------------- */
+    .container .advantages {
+        margin-top: 100px;
+    }
+
+    /* --------------------Advantages END-------------------- */
+
+
+    /* --------------------Achievements-------------------- */
+    .worktxt {
+
+        margin-top: 20px;
+    }
+
+    .container .achievement .achieve h2 {
+        font-size: small;
+    }
+
+    .container .achievement .achieve .vline>.worktxt {
+        font-size: large;
+        margin-top: 5px;
+    }
+
+    .ach-m {
+        margin: 0;
+        padding: 0;
+    }
+
+    .container .achievement .achieve p {
+        font-size: 10px;
+    }
+
+    .container .achievement .achieve-mar .worktxt {
+        margin: 0 10px;
+        font-size: larger;
+    }
+
+    .vline::before {
+        width: 0;
+        height: 0;
+    }
+
+    .container .achievement>h1 {
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+
+    .container .achievement .achieve {
+        padding-top: 20px;
+    }
+
+    .container .achievement .achieve-mar {
+        padding: 0;
+        margin-top: 20px;
+    }
+
+    /* --------------------Achievements End -------------------- */
+    .container .contact {
+        display: block;
+        margin-top: -100px;
+    }
+
+    .container .contact .contact-left {
+        margin-bottom: 100px;
+        padding-top: 0;
+    }
+
+    /* --------------------Footer -------------------- */
+    .container .footer ul li a {
+        font-size: 7px;
+    }
+
+    .container .footer p {
+        font-size: 7px;
+    }
+
+    .container .footer h1 {
+        display: none;
+    }
+
+    .container .footer {
+        padding-top: 0;
+    }
+    /* --------------------Footer End-------------------- */
+   .container .gallery{
+     display: block;
+   }
+   .container .gallery .gallery-left{
+    width: 100%;
+   }
+   .container .gallery .gallery-right{
+    width: 100%;
+   }
+}
+
+@media (max-width:475px) {
+    /* .container .nav {
+        background-color: aquamarine;
+    } */
+    .wlogo{
+        width: 70px;
+        height: 35px;
+    }
+    .container .advantages .skills .sk .sk-1 img{
+      width: 50px;
+      height: 50px;
+    }
+    .container .advantages .skills .sk h2{
+        font-size: small;
+    }
+    .container .advantages .skills .sk .sk-1 h1{
+        font-size: small;
+    }
+    .container .advantages .skills .sk .sk-1{
+        width: 100px;
+        height: 100px;
+    }
+    .container .advantages h1.adv{
+        font-size: 30px;
+    }
+    .container .about .about-1 img{
+        /* position: relative; */
+        display: block;
+        margin: 20px auto;
+        width: 80%;
+        height: auto;
+    }
+    .container .about .about-1 h2{
+        /* position: relative;
+        bottom: -55px;
+        left: -220px; */
+        color: red;
+    }
+    
+    .social h5 {
+        font-size: 10px;
+        padding-top: 3px;
+    }
+    
+    .social span {
+        padding: 0 5px;
+        font-size: small;
+    }
+    #hero .hero-container .left{
+         margin-left: 10px;
+    }
+}
+
+/* @media (width:320px) {
+    .container .nav {
+        background-color: #7ecf0b;
+    }
+   
+} */
+
+/* ------------------------------------------------------------------- */
+
+.container .about .about-1 img{
+    transition: .5s ease;
+}
+.container .about .about-1 img:hover{
+   opacity: 0.5;
+}
+.container .gallery img{
+    transition: .5s ease;
+}
+.container .gallery img:hover{
+    opacity: 0.5;
+}
+.gp1,.gp2{
+  width: 100%;
+  height: 300px;
+  background-color: #0060FF;
+  max-height: 300px;
+  background-size: cover;
+  background-position:top;
+  object-fit: cover;
+  transition: 5s ease;
+}
+.gp1:hover{
+    background-position: bottom;
+}
+.gp2:hover{
+    background-position: bottom;
+}
+.gp1{
+background-image: url(proj1.png);
+}
+.gp2{
+    background-image: url(proj2.png);
+}
+/* ---------------------------SCROLLBAR---------------------------------------- */
+/* width */
+::-webkit-scrollbar {
+    width: 6px;
+    background-color: transparent;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(26, 13, 167, 0.3);
+    background-color: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    /* background-image: linear-gradient(rgb(13, 0, 189), rgba(37, 40, 214, 0.539)); */
+    background-color:#0060FF;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background-image:linear-gradient(rgb(13, 0, 189), rgba(37, 40, 214, 0.539));
+}
+/* ---------------------------SCROLLBAR-END--------------------------------------- */
