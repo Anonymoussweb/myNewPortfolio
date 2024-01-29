@@ -39,7 +39,7 @@ html {
     width: 55px;
     height: 55px;
     background-color: white;
-    transition: .5s ease;
+    transition: .2s linear;
 
 }
 
@@ -69,7 +69,7 @@ a {
 }
 
 .sticky i {
-    color: #0060FF;
+    color: orangered;
     font-size: 40px;
     position: fixed;
     bottom: 10px;
@@ -364,6 +364,10 @@ h1 {
 .pbutton a {
     border: 1px solid grey;
     padding: 16px 60px;
+    transition: .5s ease;
+}
+.pbutton a:hover{
+    background-color: orangered;
 }
 
 /* -----------------------------------Proud Stories------------------------------------ */
@@ -582,9 +586,14 @@ h1 {
     width: 200px;
     height: 50px;
     margin-top: 10px;
-    background-color: #0060FF;
+    background-color: black;
     text-align: center;
     cursor: pointer;
+    border: 1px solid rgba(128, 128, 128, 0.744);
+    transition: .5s ease;
+}
+.subbtn:hover{
+    background-color: orangered;
 }
 
 /* ---------------------------Follow US----------------------------------- */
@@ -1170,13 +1179,13 @@ h1 {
 /* Handle */
 ::-webkit-scrollbar-thumb {
     /* background-image: linear-gradient(rgb(13, 0, 189), rgba(37, 40, 214, 0.539)); */
-    background-color: #0060FF;
+    background-color: orangered;
     border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background-image: linear-gradient(rgb(13, 0, 189), rgba(37, 40, 214, 0.539));
+    background-image: linear-gradient(rgb(189, 0, 0), rgba(214, 37, 37, 0.539));
 }
 
 /* ---------------------------SCROLLBAR-END--------------------------------------- */
@@ -1189,10 +1198,10 @@ h1 {
     content: '';
     position: absolute;
     width: 0;
-    height: 4px;
+    height: 2px;
     left: 0;;
     bottom: -25px;
-    background-color: #0060FF;
+    background-color: orangered;
   
 }
 .container .hero .nav ul li a:hover::after{
