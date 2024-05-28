@@ -170,7 +170,6 @@ h1 {
 
 #hero .hero-container .right {
     width: 60%;
-
 }
 
 #hero .hero-container .right img {
@@ -319,6 +318,7 @@ h1 {
 }
 
 .container .gallery .gallery-left .gallery-left-2 {
+    width: 100%;
     display: flex;
     gap: 10px;
 }
@@ -332,7 +332,13 @@ h1 {
     width: 100%;
     padding-bottom: 10px;
 }
-
+.gl-2 {
+    width: 1200px;
+ 
+}
+.gl-2 img{
+    width: 100%;
+}
 /* ------------------Gallery Right---------------------------- */
 .container .gallery .gallery-right {
     width: 50%;
@@ -366,7 +372,8 @@ h1 {
     padding: 16px 60px;
     transition: .5s ease;
 }
-.pbutton a:hover{
+
+.pbutton a:hover {
     background-color: orangered;
 }
 
@@ -592,7 +599,8 @@ h1 {
     border: 1px solid rgba(128, 128, 128, 0.744);
     transition: .5s ease;
 }
-.subbtn:hover{
+
+.subbtn:hover {
     background-color: orangered;
 }
 
@@ -656,6 +664,18 @@ h1 {
 
 
 /* -----------------------------------max-width:1024px Start----------------------------------------- */
+@media (min-width:1200px) {
+    #hero .hero-container .right img {
+        height: 600px;
+        object-fit: contain;
+    }
+
+    #hero .hero-container .left .left-1 h2 {
+        line-height: 200px;
+        font-weight: 800;
+    }
+}
+
 @media (max-width:1024px) {
 
     /* --------------------Navbar-------------------- */
@@ -1046,6 +1066,7 @@ h1 {
     .container .gallery .gallery-right {
         width: 100%;
     }
+
 }
 
 @media (max-width:475px) {
@@ -1199,12 +1220,13 @@ h1 {
     position: absolute;
     width: 0;
     height: 2px;
-    left: 0;;
+    left: 0;
     bottom: -25px;
     background-color: orangered;
-  
+
 }
-.container .hero .nav ul li a:hover::after{
+
+.container .hero .nav ul li a:hover::after {
     animation: move 1s ease;
 }
 
@@ -1224,4 +1246,5 @@ h1 {
         left: 100%;
     }
 }
+
 /* ---------------------------Animation On Nav End--------------------------------------- */
